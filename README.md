@@ -1,2 +1,3 @@
 # mslearn-ai-vision
-Lab files for Azure AI Vision modules
+Lab files for Azure AI Vision modules from Microsoft
+
