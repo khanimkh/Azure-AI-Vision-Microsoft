@@ -28,8 +28,10 @@ def main():
         with open(image_file, "rb") as f:
             image_data = f.read()
 
-        # Authenticate Azure AI Vision client
-
+       # Authenticate Azure AI Vision client
+        cv_client = ImageAnalysisClient(
+         endpoint=ai_endpoint,
+         credential=AzureKeyCredential(ai_key))
         
         # Analyze image
         AnalyzeImage(image_file, image_data, cv_client)
